@@ -21,4 +21,5 @@ features = np.array([[age, bmi, children, gender_male, smoker_yes]])
 
 if st.button("Predict Charges"):
     prediction = model.predict(features)
-    st.success(f"Estimated Insurance Charges: ${prediction[0]:,.2f}")
+    st.success(f"Estimated Insurance Charges: ${prediction:,.2f}")
+
