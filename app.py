@@ -20,6 +20,6 @@ smoker_yes = 1 if smoker == "Yes" else 0
 features = np.array([[age, bmi, children, gender_male, smoker_yes]])
 
 if st.button("Predict Charges"):
-    prediction = model.predict(features)
+    prediction = float(model.predict(features)[0])  # convert to float
     st.success(f"Estimated Insurance Charges: ${prediction:,.2f}")
 
