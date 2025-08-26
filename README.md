@@ -1,87 +1,104 @@
-# Insurance Charges Prediction App
+# 🏥 Insurance Charges Prediction App
 
 👉 [Live Demo on Streamlit](https://insurance-prediction-app--b5.streamlit.app/)
 
-A simple and interactive **web application** to predict insurance charges based on user details using a trained machine learning model.
+A simple and interactive **web application** to predict insurance
+charges based on user details using a trained machine learning model.
 
----
+------------------------------------------------------------------------
 
 ## 🔹 Features
 
-- Predict insurance charges using the following inputs:
-  - Age
-  - BMI
-  - Number of children
-  - Gender
-  - Smoker status
-- Interactive web interface built with **Streamlit**
-- Real-time prediction without the need for a scaler (model trained on raw features)
+-   Predict insurance charges using:
+    -   Age
+    -   BMI
+    -   Number of Children
+    -   Gender
+    -   Smoker Status
+-   Interactive UI built with **Streamlit**
+-   Real-time predictions (no feature scaling required)
+-   Pre-trained ML model for quick results
 
----
+------------------------------------------------------------------------
 
 ## 🔹 Installation
 
-1. **Clone the repository:**
-```bash
+1.  **Clone the repository**
+
+``` bash
 git clone <your-repo-link>
-cd <repo-folder>
+cd <your-repo-folder>
+```
 
-2. **Install dependencies:**
+2.  **Install dependencies**
+
+``` bash
 pip install -r requirements.txt
+```
 
-3. **Required packages include:**
- Predict insurance charges using the following inputs:
-  - streamlit
-  - numpy
-  - scikit-learn
-  - pickle (built-in)
+3.  **Required packages include**
 
-----
-🔹 Usage
+-   streamlit
+-   numpy
+-   scikit-learn
+-   pickle (built-in)
+
+------------------------------------------------------------------------
+
+## 🔹 Usage
 
 Run the Streamlit app:
 
+``` bash
 streamlit run app.py
+```
+
+### Steps:
+
+1.  Enter the user details:
+    -   Age
+    -   BMI
+    -   Number of children
+    -   Gender
+    -   Smoker status
+2.  Click **Predict Charges**
+3.  View the estimated charges instantly 🚀
+
+------------------------------------------------------------------------
+
+## 🔹 Model
+
+-   Trained using: **Linear Regression** (or specify if Lasso/KNN is
+    used)
+
+-   Features:
+
+        age, bmi, children, Gender_Male, Smoker_Yes
+
+-   Model saved as: `trained_model.sav` using **pickle**
+
+-   No scaling required (trained on raw features)
+
+------------------------------------------------------------------------
+
+## 🔹 Notes
+
+-   Ensure input format matches the training order:
+
+        age, bmi, children, Gender_Male, Smoker_Yes
+
+-   Can be extended with more models and features.
+
+------------------------------------------------------------------------
+
+## 🔹 Screenshot 
+
+<img width="999" height="720" alt="image" src="https://github.com/user-attachments/assets/66807500-7276-4c4c-81ba-4b4558f72dc2" />
 
 
-Enter the user details in the input fields:
+------------------------------------------------------------------------
 
-Age
+## 🔹 License
 
-BMI
-
-Number of children
-
-Gender
-
-Smoker status
-
-Click Predict Charges to get the estimated insurance charges.
-
-🔹 Model
-
-Trained using a Linear Regression model (or specify if Lasso/KNN)
-
-Features used:
-
-age, bmi, children, Gender_Male, Smoker_Yes
-
-Saved as trained_model.sav using pickle.
-
-🔹 Notes
-
-The model expects inputs in the same order as used during training:
-age, bmi, children, Gender_Male, Smoker_Yes
-
-No scaling is required for this model.
-
-🔹 Screenshot (Optional)
-
-Add a screenshot of the app here if available
-
-🔹 License
-
-This project is open-source and free to use for educational purposes.
-
-
-
+📜 This project is open-source and free to use for **educational
+purposes**.
