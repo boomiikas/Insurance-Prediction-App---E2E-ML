@@ -1,5 +1,7 @@
 # Insurance Charges Prediction App
 
+👉 [Live Demo on Streamlit](https://insurance-prediction-app--b5.streamlit.app/)
+
 A simple and interactive **web application** to predict insurance charges based on user details using a trained machine learning model.
 
 ---
